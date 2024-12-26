@@ -1,5 +1,9 @@
-const home = (req,res)=>{
-   res.send('home page')
-}
+import express from 'express'
+const router = express.Router();
+import register from "../controller/userController.js"
 
-export default home;
+
+router.post('/register', register)
+
+
+export default router
