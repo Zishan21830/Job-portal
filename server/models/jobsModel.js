@@ -1,7 +1,7 @@
 import mongoose, { model } from "mongoose";
 const { Schema, model } = mongoose;
 const jobsSchema = Schema({
-  id: { type: String, required: true, unique: true },
+  id: { type: String, unique: true },
   title: { type: String, required: [true, "Enter the job title"], trim: true },
   description: { type: String, trim: true },
   location: { type: String, trim: true },
