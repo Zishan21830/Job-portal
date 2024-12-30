@@ -1,8 +1,10 @@
 import express from "express"
 const router = express.Router();
-import { ping } from "../controller/jobsController.js";
+import { postJobs } from "../controller/jobsController.js";
+
 
 // POST /api/jobs – Create a job posting (Admin/Company)
+router.post("/postJobs", postJobs)
 // GET /api/jobs – List all job postings
 // GET /api/jobs/:id – View job details
 // PUT /api/jobs/:id – Update a job posting
