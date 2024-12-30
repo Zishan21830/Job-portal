@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(bodyParser.json())
 const PORT = 5000;
 
-app.use('/api/v1/user/', router)
+app.use('/api/v1/user/', userRouter)
 app.use("/api/v1/jobs", jobsRouter);
 
 app.listen(PORT, ()=>{
