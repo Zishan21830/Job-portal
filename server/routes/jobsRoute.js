@@ -1,6 +1,6 @@
 import express from "express"
 const router = express.Router();
-import { postJobs } from "../controller/jobsController.js";
+import { postJobs, ping } from "../controller/jobsController.js";
 
 
 // POST /api/jobs – Create a job posting (Admin/Company)

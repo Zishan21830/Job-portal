@@ -26,7 +26,6 @@ const jobsSchema = Schema({
     enum: ["Active", "Not Active"],
     trim: true,
   },
-  applications_count: { type: Number, default: 0 },
   education_required: { type: String },
   last_updated: { type: Date, default: Date.now },
 });
